@@ -24,3 +24,17 @@
 ## Стек
 
 Python, aiogram 3, SQLite (aiosqlite).
+
+## Скриншоты
+
+### 1. Telegram-бот
+![Бот](screenshots/Screenshot_1.png)
+
+### 2. Приветствие
+![Приветствие](screenshots/Screenshot_2.png)
+
+### 3. Процесс записи
+![Запись](screenshots/Screenshot_3.png)
+
+### 4. Выбор даты
+![Даты](screenshots/Screenshot_4.png)
