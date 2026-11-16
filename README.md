@@ -6,7 +6,7 @@
 ## Запуск
 
 1. Создайте бота у @BotFather и скопируйте токен.
-2. `cp .env.demo` и впишите `BOT_TOKEN` и `ADMIN_ID` (свой ID можно узнать у @userinfobot).
+2. `cp .env.demo .env` и впишите `BOT_TOKEN` и `ADMIN_ID` (свой ID можно узнать у @userinfobot). Для Windows: `copy .env.demo .env`
 3. `python -m venv .venv && source .venv/bin/activate`
 4. `pip install -r requirements.txt`
 5. `python bot.py`
