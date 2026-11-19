@@ -1,40 +1,39 @@
-# Telegram-бот записи на услугу
+# Telegram Appointment Booking Bot
 
-Демо-бот для салонов, мастеров и репетиторов: клиент выбирает услугу, дату и время,
-получает подтверждение и напоминание за час. Владелец видит новые записи и отмены.
+A demo bot for beauty salons, service professionals, and tutors. Clients choose a service, date, and time, receive a booking confirmation and a reminder one hour before their appointment. The owner receives notifications about new bookings and cancellations.
 
-## Запуск
+## Getting Started
 
-1. Создайте бота у @BotFather и скопируйте токен.
-2. `cp .env.demo .env` и впишите `BOT_TOKEN` и `ADMIN_ID` (свой ID можно узнать у @userinfobot). Для Windows: `copy .env.demo .env`
+1. Create a bot using [@BotFather](https://t.me/BotFather) and copy its token.
+2. Run `cp .env.demo .env` and enter your `BOT_TOKEN` and `ADMIN_ID` (you can find your Telegram ID using [@userinfobot](https://t.me/userinfobot)). On Windows, use: `copy .env.demo .env`.
 3. `python -m venv .venv && source .venv/bin/activate`
 4. `pip install -r requirements.txt`
 5. `python bot.py`
 
-## Настройка под клиента
+## Client-Specific Settings
 
-В начале `bot.py`: список услуг и цен, рабочие часы, выходные дни, за сколько напоминать.
+At the beginning of `bot.py`, you can configure the list of services and prices, working hours, days off, and how far in advance reminders should be sent.
 
-## Команды
+## Commands
 
-- `/start` — меню
-- `/my` — мои записи и отмена
-- `/admin` — ближайшие записи (только владелец)
+- `/start` — open the main menu
+- `/my` — view and cancel your appointments
+- `/admin` — view upcoming appointments (owner only)
 
-## Стек
+## Tech Stack
 
 Python, aiogram 3, SQLite (aiosqlite).
 
-## Скриншоты
+## Screenshots
 
-### 1. Telegram-бот
-![Бот](screenshots/Screenshot_1.png)
+### 1. Telegram Bot
+![Bot](screenshots/telegram_bot.png)
 
-### 2. Приветствие
-![Приветствие](screenshots/Screenshot_2.png)
+### 2. Welcome Message
+![Welcome Message](screenshots/greetings.png)
 
-### 3. Процесс записи
-![Запись](screenshots/Screenshot_3.png)
+### 3. Booking Process
+![Booking Process](screenshots/booking_process.png)
 
-### 4. Выбор даты
-![Даты](screenshots/Screenshot_4.png)
+### 4. Date Selection
+![Date Selection](screenshots/date_selection.png)
